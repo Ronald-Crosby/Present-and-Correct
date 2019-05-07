@@ -1,0 +1,38 @@
+.background {
+    background-image: url(assets/site_bg.jpg);
+    background-repeat: repeat-x/repeat-y;
+    margin: 20px;    
+}
+
+.wrapper {
+    max-width: 52.5vw;
+    margin: 0 auto;
+    padding: 0px 20px;
+    background-color: #ffffff;
+}
+
+.row-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    a {
+        display: inline-block;
+        width: 32%;
+    }
+}
+
+.row-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 20px 0;
+
+    a {
+        display: inline-block;
+        width: 49%;
+    }
+}
+
+
