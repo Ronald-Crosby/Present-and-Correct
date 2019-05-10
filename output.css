@@ -92,8 +92,14 @@ input, textarea, select {
 
 .hero-container {
   position: relative;
-  display: flex;
   overflow: hidden;
+}
+
+.slides {
+  display: flex;
+}
+.slides li {
+  flex: 0 0 100%;
 }
 
 .hero-arrow-left {
