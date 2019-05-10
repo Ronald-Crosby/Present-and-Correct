@@ -1,7 +1,19 @@
-.background {
+.page-margin {
+    background-color: #ffffff;
+}
+
+.main {
     background-image: url(assets/site_bg.jpg);
     background-repeat: repeat-x/repeat-y;
-    margin: 20px;    
+    margin: 20px;     
+    position: relative;
+    z-index: 2;
+    overflow-x: hidden;
+    transition: transform 0.5s ease;
+}
+
+.open {
+    transform: translate(435px, 0);    
 }
 
 .wrapper {
@@ -9,6 +21,38 @@
     margin: 0 auto;
     padding: 0px 20px;
     background-color: #ffffff;
+}
+
+// hero
+
+.hero-container {
+    position: relative;
+    display: flex;
+    overflow: hidden;    
+}
+
+.hero-arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.hero-arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+.hero-arrow img {
+    height: 30px;    
+}
+
+/// hero end
+
+.gallery.gallery-small-screen {
+    display: none;
 }
 
 .row-3 {
@@ -35,4 +79,15 @@
     }
 }
 
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 20px 0;
+
+    a {
+        display: inline-block;
+        width: 99%;
+    }
+}
 

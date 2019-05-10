@@ -3,13 +3,28 @@
 body {
     font-family: "p22-underground";
     font-weight: 400;
-    font-style: normal; }
+    font-style: normal; 
+  }
+
+  .mobile-nav li a, .subnav li a {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #333333;
+    font-weight: 400;
+  }
+
+  .back-button p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.7em;
+    color: #333333;
+  }
   
   header nav li a {
     font-size: 0.8em;
     text-decoration: none;
     color: #333333;
-    font-weight: 400; }
+    font-weight: 400; 
+  }
   
   .toolbar a {
     text-decoration: none;
@@ -19,20 +34,24 @@ body {
   
   .toolbar form {
     font-size: 0.9em;
-    letter-spacing: 0.2em; }
+    letter-spacing: 0.2em; 
+  }
   
   footer form input {
     font-size: 0.65em;
-    letter-spacing: 0.1em; }
+    letter-spacing: 0.1em; 
+  }
   
   footer ul li a {
     font-size: 0.85em;
     text-decoration: none;
     color: #333333;
     font-weight: 400;
-    letter-spacing: 0.115em; }
+    letter-spacing: 0.115em; 
+  }
   
   footer .credits p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #888888;
-    font-size: 0.8em; }
+    font-size: 0.8em; 
+  }

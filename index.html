@@ -10,14 +10,108 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="output.css">
+        <script src="menu.js"></script>
     </head>
 
     <body>
-        <div class="background">
+        <div class="master-nav">
+            <div class="mobile-nav">
+                <form class="searchbar">
+                        <input type="text" placeholder="Search">
+                </form>
+                    <ul>
+                        <li><a href="#">NEW</a></li>
+                        <li><a href="#">MAIL</a></li>
+                        <li class="js-has-subnav" id="give" data-subnav-target-id="0">
+                            <a href="#">GIVE
+                                <div class="subnav-button">
+                                    <img src="assets/Down-Arrow-PNG.png">
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#">NOTES</a></li>
+                        <li class="js-has-subnav" id="write" data-subnav-target-id="1">
+                            <a href="#">WRITE
+                                <div class="subnav-button">
+                                    <img src="assets/Down-Arrow-PNG.png">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="js-has-subnav" id="organise" data-subnav-target-id="2">
+                            <a href="#">ORGANISE
+                                <div class="subnav-button">
+                                    <img src="assets/Down-Arrow-PNG.png">
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#">READ</a></li>
+                        <li><a href="#">EPHEMERA</a></li>
+                        <li><a href="#">PRINTS</a></li>
+                        <li class="js-has-subnav" id="home" data-subnav-target-id="3">
+                            <a href="#">HOME
+                                <div class="subnav-button">
+                                    <img src="assets/Down-Arrow-PNG.png">    
+                                </div>
+                            </a>
+                        </li>                
+                    </ul>
+            </div>
+
+            <div class="subnav">
+                <a class="back-button js-back-button">
+                    <div class="back-icon">
+                        <img src="assets/Down-Arrow-PNG.png">
+                    </div>
+                    <p>Back to previous</p>
+                </a>
+
+                <ul>
+                    <!-- GIVE -->
+                    <div class="js-subnav-group js-give" data-subnav-id="0">
+                        <li><a href="#">CARDS</a></li>
+                        <li><a href="#">TAGS / BAGS / TAPE</a></li>
+                    </div>
+                    <!-- WRITE -->
+                    <div class="js-subnav-group js-write" data-subnav-id="1">
+                        <li><a href="#">PENS / PENCILS</a></li>
+                        <li><a href="#">CHALK / CRAYONS</a></li>
+                        <li><a href="#">RUBBER STAMPS</a></li>
+                        <li><a href="#">CUT / PASTE</a></li>
+                        <li><a href="#">ERASE / SHARPEN</a></li>
+                        <li><a href="#">MEASURE</a></li>
+                        <li><a href="#">TYPEWRITERS</a></li>
+                        <li><a href="#">CASES</a></li>
+                    </div>
+                    <!-- ORGANISE -->
+                    <div class="js-subnav-group js-organise" data-subnav-id="2">
+                        <li><a href="#">CLIPS</a></li>
+                        <li><a href="#">PINS</a></li>
+                        <li><a href="#">DIARIES / PLANNERS</a></li>
+                        <li><a href="#">STAPLERS / DISPENSERS</a></li>
+                        <li><a href="#">TRAYS / TIDIES</a></li>
+                        <li><a href="#">FOLDERS / ALBUMS</a></li>
+                        <li><a href="#">CLIPBOARDS</a></li>
+                    </div>
+                    <!-- HOME -->
+                    <div class="js-subnav-group js-home" data-subnav-id="3">
+                        <li><a href="#">DISPLAY</a></li>
+                        <li><a href="#">DESK CALENDARS</a></li>
+                        <li><a href="#">PLAY</a></li>
+                        <li><a href="#">STORAGE</a></li>
+                    </div> 
+                </ul>
+            </div>
+        </div>
+
+        
+            <div class="main">
             <div class="wrapper">
 
                 <div class="toolbar">
-                    <form>
+                    <a href="#" class="burger | js-burger">
+                        <img src="assets/Hamburger menu.png">
+                    </a>
+                    <form class="searchbar">
                         <input type="text" placeholder="Search">
                     </form>
                     <a href="#">CART / 0 ITEMS (£0.00)</a>
@@ -46,12 +140,20 @@
             </header>
 
             <div class="hero"> 
-                <div class="hero-container">
-                    <img src="assets/featured image 01.jpeg">
+                <div class="hero-container js-hero-container">       
+                        <img src="assets/featured image 01.jpeg"> 
+                        <img src="assets/featured image 02.jpeg">
+                        <div class="hero-arrow hero-arrow-left js-hero-arrow-left">
+                            <img src="assets/Down-Arrow-PNG.png">
+                        </div>
+
+                        <div class="hero-arrow hero-arrow-right js-hero-arrow-left">
+                            <img src="assets/Down-Arrow-PNG.png">
+                        </div>                        
                 </div>                
             </div>
 
-            <div class="gallery">
+            <div class="gallery gallery-desktop">
                 <div class="row-3">
                     <a href="#"><img src="assets/blog.jpeg"></a>
                     <a href="#"><img src="assets/week.jpeg"></a>
@@ -60,6 +162,22 @@
                 <div class=" row-2">
                     <a href="#"><img src="assets/instagram.jpeg"></a>
                     <a href="#"><img src="assets/get set.jpeg"></a>
+                </div>
+            </div>
+
+            <div class="gallery gallery-small-screen">
+                <div class="row-2">
+                    <a href="#"><img src="assets/blog.jpeg"></a>
+                    <a href="#"><img src="assets/week.jpeg"></a>                    
+                </div>
+
+                <div class=" row-2">
+                    <a href="#"><img src="assets/shop.jpeg"></a>
+                    <a href="#"><img src="assets/instagram.jpeg"></a>                    
+                </div>
+
+                <div class="row-1">
+                <a href="#"><img src="assets/get set.jpeg"></a>
                 </div>
             </div>
 
@@ -89,5 +207,6 @@
 
             </div>
         </div>
+    
     </body>
 </html>

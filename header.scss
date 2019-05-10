@@ -15,6 +15,10 @@
         margin-right: 20px;
     }
 
+    .burger {        
+        width: 2em;
+    }
+
 }
 
 header {
@@ -28,9 +32,10 @@ header {
         width: 100%;
     }
 
-    nav ul {
+    ul {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         border-top: 1px solid #000000;
 
@@ -50,7 +55,91 @@ header {
     }
 }
 
+.mobile-nav, .subnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 435px;
+    height: 100vh;
+    background-color: #ffffff;
 
+    form {
+        padding: 20px 30px;
+        background-color: #eeeeee;
+        margin-bottom: 10px;
+    }
 
+    input {
+        outline: none;
+        border: none;
+        background-color: #eeeeee;        
+    }
 
+    ul li {
+        padding: 10px 25px;
+        border-bottom: 1px solid #cccccc;
+        position: relative;
+    }
+
+    .subnav-button {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        width: 18px;
+        height: 18px;
+        border: 2px solid #333333;
+        transform: translateY(-50%);
+
+        img {
+            width: 50%;
+            transform: translate(4px,-3.5px) rotate(-90deg);        
+        }
+    }
+}
+
+.master-nav {
+    position: relative;
+}
+
+.subnav {    
+    transition: transform 0.5s ease;
+    transform: translateX(100%);
+
+    .back-button {
+        display: flex;        
+        width: 100%;
+        height: 50px;
+        justify-content: left;
+        align-items: center;
+        padding-left: 20px;
+        cursor: pointer;
+        
+        .back-icon {
+            height: 25px;
+            width: 25px;
+            border: 2px solid #333333;
+            margin-right: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            height: 15px;
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.js-subnav-visible {
+    transform: translateX(0%);
+}
+
+.js-subnav-group {
+    display: none;
+}
+
+.js-link-group-show {
+    display: block;
+}
 
