@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/kxx7xvs.css");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -71,7 +72,7 @@ input, textarea, select {
 }
 
 .wrapper {
-  max-width: 52.5vw;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0px 20px;
   background-color: #ffffff;
@@ -141,6 +142,92 @@ header nav ul li:first-child {
 header .logo img {
   width: 250px;
   margin: 20px 0;
+}
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-top: 3px solid #000000;
+}
+
+footer form {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+footer form input.text {
+  width: 400px;
+  height: 35px;
+  padding: 0 20px;
+}
+
+footer form input.submit {
+  height: 35px;
+  padding: 10px 20px;
+  background-color: #333333;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  position: absolute;
+}
+
+footer ul.links {
+  display: flex;
+}
+
+footer ul.links li {
+  margin-right: 10px;
+}
+
+footer .credits {
+  margin-top: 40px;
+}
+
+footer .credits p {
+  padding-bottom: 5px;
+}
+
+body {
+  font-family: "p22-underground";
+  font-weight: 400;
+  font-style: normal;
+}
+
+header nav li a {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 400;
+}
+
+.toolbar a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 0.8em;
+}
+
+.toolbar form {
+  font-size: 0.9em;
+  letter-spacing: 0.2em;
+}
+
+footer form input {
+  font-size: 0.65em;
+  letter-spacing: 0.1em;
+}
+
+footer ul li a {
+  font-size: 0.85em;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 400;
+  letter-spacing: 0.115em;
+}
+
+footer .credits p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #888888;
+  font-size: 0.8em;
 }
 
 /*# sourceMappingURL=output.css.map */
