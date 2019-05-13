@@ -11,6 +11,9 @@ footer {
         width: 400px;
         height: 35px;
         padding: 0 20px; }
+        footer form input.text:focus {
+          outline: #333333 solid 1px;
+        }
       footer form input.submit {
         height: 35px;
         padding: 10px 20px;
@@ -19,6 +22,7 @@ footer {
         outline: none;
         border: none;
         position: absolute; 
+        cursor: pointer;
     }
 
     footer ul.links {

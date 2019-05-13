@@ -3,12 +3,18 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 10px;
+    padding: 10px 10px;
 
     input {
-        padding: 10px 20px 0 20px;
+        padding: 10px 40px 10px 20px;
         outline: none;
         border: none;
+        transition: border 0.5s ease;
+    }
+
+    input:focus {
+        border: 1px solid #aaaaaa; 
+        
     }
 
     a {
@@ -32,7 +38,7 @@ header {
         width: 100%;
     }
 
-    ul {
+    .main-nav-ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -42,6 +48,7 @@ header {
         li {
             padding: 10px 20px;
             border-left: 1px solid #333333;
+            position: relative;
         }
 
         li:first-child {
@@ -50,10 +57,52 @@ header {
     }
 
     .logo img {
-        width: 250px;
+        width: 233px;
         margin: 20px 0;
     }
 }
+
+/* DROPDOWN MENUS */
+
+.dropdown-content {
+    opacity: 0;    
+    position: absolute;
+    width: 230px;
+    padding: 10px 20px;
+    border: none;    
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    margin-top: 10px;    
+    background-color: #ffffff;
+    left: 50%;
+    margin-left: -115px;
+    transition: opacity 0.1s;
+    
+    li {
+        display: inline-block;        
+        border-left: none !important;
+        cursor: pointer;
+
+        a {
+            color: #aaaaaa;  
+            transition: color 0.1s;          
+        }
+
+        a:hover {
+            color: #000000;
+            
+        }
+    }
+}
+
+.desktop-dropdown:hover .dropdown-content {
+    opacity: 1;    
+    z-index: 2;
+    
+}
+
+/* DROPDOWN END */
 
 .mobile-nav, .subnav {
     position: fixed;
