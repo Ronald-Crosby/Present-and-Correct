@@ -26,32 +26,34 @@
 // hero
 
 .hero-container {
-    position: relative;
-    
+    position: relative;    
     overflow: hidden;    
 }
 
 .slides {
-    display: flex;  
+    display: flex;
+    transform: translateX(0%);  
+    transition: transform 1s ease;
 
     li {
         flex: 0 0 100%;
-    }
-    
+    }    
 }
 
-.hero-arrow-left {
+.hero-arrow-prev {
     position: absolute;
     top: 50%;
     left: 1%;
     transform: translateY(-50%) rotate(90deg);
+    cursor: pointer;
 }
 
-.hero-arrow-right {
+.hero-arrow-next {
     position: absolute;
     top: 50%;
     right: 1%;
     transform: translateY(-50%) rotate(-90deg);
+    cursor: pointer;
 }
 
 .hero-arrow img {
