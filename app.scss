@@ -44,7 +44,7 @@
 .hero-arrow-prev {
     position: absolute;
     top: 50%;
-    left: 1%;
+    left: 2%;
     transform: translateY(-50%) translateX(-200%) rotate(90deg);
     opacity: 0;
     transition: all 0.7s;
@@ -55,7 +55,7 @@
 .hero-arrow-next {
     position: absolute;
     top: 50%;
-    right: 1%;
+    right: 2%;
     transform: translateY(-50%) translateX(200%) rotate(-90deg);
     opacity: 0;
     transition: all 0.7s;
